@@ -1,0 +1,186 @@
+/* element styles */
+* {
+    box-sizing: border-box;
+}
+
+div {
+    margin: 1em 0;
+}
+
+
+body {
+    font-family: 'Roboto';
+}
+
+
+footer {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 10em;
+}
+
+fieldset {
+    border: none;
+    margin: auto;
+    padding: 0;
+}
+
+legend {
+   font-size: 1.5em;
+   font-weight: bold;
+   margin-bottom: .5em;
+}
+/* class styles */
+
+.main-header {
+    text-align: center;
+    color: white;
+    background-color: rgb(54, 56, 58); 
+    margin:  0;
+    padding: 1.5em 0;
+    text-transform: uppercase;
+    font-size: .5em;
+    min-width: 100%
+}
+
+.intro {
+    text-align: center;
+    border-bottom: black solid;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 1em;
+   
+}
+
+.intro h2 {
+    margin-bottom: 0;
+}
+
+.contact-info {
+    margin: .25em auto 1em;
+    border-top: black solid .1em;
+    width: 90%;
+    padding-top: 2em;
+    
+}
+
+.newsletter {
+    border-top: black solid .1em;
+    width: 90%;
+    margin: auto;
+    padding-top: 2em;
+    background-color: rgb(174, 236, 236);
+}
+
+.wrap {
+    margin: auto;
+}
+/* attribute styles */
+
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
+    margin: .75em 0;
+    background-color: #eee;
+    border: none;
+    width: 100%;
+    height: 3em;
+    text-align: right;
+    padding-right: 1em;
+}
+
+input:focus,
+textarea:focus {
+    outline: 0;
+    outline: 2px solid blue; 
+    transition: ease-in .5s;
+    padding-left: 5px;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+    padding-left: 5px;
+}
+
+select {
+    margin: .75em 0;
+    background-color:  #eee;
+    border: none;
+    width: 100%;
+    height: 3em;
+    text-align: left;
+    padding-left: 1em;
+    color: gray;
+}
+
+.rounded {
+    border-radius: 5px;
+}
+
+input[type="checkbox"] {
+    margin: .75em 0;
+}
+
+input[type="radio"] {
+    margin: .75em 0;
+}
+
+.light {
+    font-weight: lighter;
+    color: gray;   
+}
+
+button {
+    font-size: 25px;
+    color: white;
+    width: 100%;
+    background-color: #52bab3;
+    height: 70px;
+    border: none;
+    margin-top: 1em;
+}
+
+textarea {
+    width: 100%;
+    height: 5em;
+    background-color:  #eee;
+    border: none;
+    margin-top:  1em;
+}
+
+#zip {
+    width: 30%;
+}
+
+/*Media Queries  */
+
+@media (min-width: 768px) {
+    .intro,
+    .contact-info,
+    .newsletter {
+        width: 50%;
+    }
+
+  
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    select  {
+        width: 70%;
+        
+    }
+
+    .contact-info label {
+        
+        align-self: center;
+        width: 30%;
+        
+    }
+
+    .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-end;
+        
+    }
+}
